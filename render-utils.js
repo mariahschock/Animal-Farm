@@ -14,6 +14,11 @@ export function renderListItem(animal) {
     const span = document.createElement('span');
     span.textContent = animal.says;
 
-    div.append(img, nameSpan, span);
+    const a = document.createElement('a');
+    a.href = `./Animal-Page/animal.js/?id=${animal.id}`;
+    a.textContent = animal.img;
+
+
+    div.append(img, nameSpan, span, a);
     return div;
 }

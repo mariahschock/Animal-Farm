@@ -5,5 +5,6 @@ const params = new URLSearchParams(window.location.search);
 
 const animal = findByID(params.get('id'), animals);
 
-const animalName = document.getElementById('animal-name');
-animalName.textContent = animal.name;
+const animalImg = document.getElementById('animal-img');
+animalImg.textContent = animal.img;
+
