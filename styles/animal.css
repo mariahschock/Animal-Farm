@@ -1,8 +1,8 @@
 
-main{
-    align-items: center;
-    justify-content: center;
-}
-img {
-    width:450px;
+main {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 250px;
+    padding-left:50px;
 }
